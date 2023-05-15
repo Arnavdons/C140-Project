@@ -16,14 +16,19 @@
     </head>
     <body background="background1.jpg">
         <center>
-            <h1 class="btn btn-warning heading">AI PING PONG 
+            <div class="btn btn-warning heading">
+            <h1>AI PING PONG 
             <button class="btn btn-warning" data-toggle="modal" data-target="#myModal">Instructions</button></h1>
-            <br><br>
+        </div><br><br>
             <button id="play" class="btn btn-success" onclick="play()">PLAY</button>
             <br>
     <h3 id="status" class="btn btn-warning"></h3>
         <br><br>
         <div id="canvas"></div>
+        <br><br>
+        <button onclick="restart()" id="restart" class="btn btn-danger">Restart</button>
+        <div id="footer">Made By Arnav Kadwane</div>
+
         <div id="myModal" class="modal fade">
         <div class="modal-dialog">
         <div class="modal-content">
@@ -43,9 +48,6 @@
         </div>
         </div>
         </div>
-        <button onclick="restart()" id="restart" class="btn btn-danger">Restart</button>
-        <br><br><br><br><br><br>
-        <div id="footer">Made By Arnav Kadwane</div>
         
         </center>
 

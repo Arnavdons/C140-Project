@@ -27,6 +27,7 @@ function setup(){
  video=createCapture(VIDEO);
  video.size(700,600);
  video.hide();
+ posenet=ml5.poseNet(video,modelloaded);
  
 }
 
@@ -168,4 +169,8 @@ function paddleInCanvas(){
   if(mouseY < 0){
     mouseY =0;
   }  
+}
+
+function modelloaded(){
+console.log("Model is Loaded!!");
 }
